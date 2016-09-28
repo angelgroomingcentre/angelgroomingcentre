@@ -1,0 +1,61 @@
+/*==================   Tumbnail    ======================*/
+@overlay-bg: rgba(0,0,0,.5);
+@overlay-icon: @fa-expand;
+@overlay-icon-size: 30px;
+@overlay-icon-color: #fff;
+
+.thumb {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  img {
+  	width: 100%;
+  	height: auto;
+    .transition(.5s all ease);
+  }
+
+  &_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    .transition(.3s all ease);
+    color: @overlay-icon-color;
+    background: transparent;
+
+    &:before {
+      content: @overlay-icon;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      font: 400 @overlay-icon-size @fa;
+      line-height: @overlay-icon-size;
+      margin-top: -(@overlay-icon-size / 2);
+      text-align: center;
+
+      .lt-ie9 & {
+        display: none;
+      }
+    }
+
+  }
+
+  &:hover {
+    .thumb_overlay {
+      opacity: 1;
+      .background(@overlay-bg);
+
+      .lt-ie9 &:before {
+        display: block;
+      }
+    }
+
+    img {
+      .transform(scale(1.2));
+    }
+  }
+}

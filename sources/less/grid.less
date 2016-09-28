@@ -1,0 +1,150 @@
+@import "_normalize.less";
+@import "_mixins.less";
+
+/*==========================================================
+                        GRID SYSTEM
+==========================================================*/
+
+@gridColumns: 12;
+
+//Default 1200px min
+@gridColumnWidth: 70px;
+@gridGutterWidth: 30px;
+
+//940px grid
+@gridColumnWidth980: 60px;
+@gridGutterWidth980: 20px;
+
+// 768px-979px
+@gridColumnWidth768: 44px;
+@gridGutterWidth768: 20px;
+
+// Fluid
+@fluidGridColumnWidth: 8.3333333333333333333%;
+
+.buildGrid(@gridColumnWidth, @gridGutterWidth) {
+  .container, .container-fluid {
+    width: (@gridColumnWidth * @gridColumns) + (@gridGutterWidth * (@gridColumns - 1));
+  }
+
+  .container {
+    .row {
+      margin-left: @gridGutterWidth * -1;
+    }
+
+    [class*="grid_"] {
+      float: left;
+      min-height: 1px; // prevent collapsing columns
+      margin-left: @gridGutterWidth;
+    }
+
+    .make_grids (@i) when (@i > 0) {
+      .grid_@{i} {
+        width: (@gridColumnWidth * @i) + (@gridGutterWidth * (@i - 1));
+      }
+
+      .make_grids(@i - 1);
+    }
+
+    .make_preffixes (@i) when (@i > 0) {
+      .preffix_@{i} {
+        margin-left: (@gridColumnWidth * @i) + (@gridGutterWidth * (@i + 1));
+      }
+
+      .make_preffixes(@i - 1);
+    }
+
+    .make_grids(@gridColumns);
+    .make_preffixes(@gridColumns);
+  }
+}
+
+.container, .container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  .box-sizing(border-box);
+}
+
+.container, .container-fluid, .row{
+  .clearfix();
+}
+
+.container-fluid {
+  [class*="grid_"] {
+    float: left;
+    width: @fluidGridColumnWidth;
+    min-height: 1px;
+  }
+}
+
+
+.container-fluid{
+  .make_fgrid (@i) when (@i > 0) {
+    .grid_@{i} {
+      width: (@fluidGridColumnWidth * @i);
+    }
+
+    .make_fgrid(@i - 1);
+  }
+
+  .make_fpreffix (@i) when (@i > 0) {
+    .preffix_@{i} {
+      margin-left: (@fluidGridColumnWidth * @i);
+    }
+
+    .make_fpreffix(@i - 1);
+  }
+
+  .make_fgrid(@gridColumns);
+  .make_fpreffix(@gridColumns);
+}
+
+.buildGrid(@gridColumnWidth, @gridGutterWidth);
+
+@media (min-width: 980px) and (max-width: 1199px) {
+ .buildGrid(@gridColumnWidth980, @gridGutterWidth980);
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+ .buildGrid(@gridColumnWidth768, @gridGutterWidth768);
+}
+
+@media (max-width: 767px) {
+  .container, .container-fluid {
+    width: 420px;
+    padding: 0;
+  }
+  .container .row {
+    margin-left: 0;
+  }
+
+  .row + .row,
+  [class*="grid_"] + [class*="grid_"] {
+    margin-top: 30px;
+  }
+
+  .container, .container-fluid {
+    [class*="grid_"] {
+      float: none;
+      display: block;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    padding: 0;
+  }
+
+  .container, .container-fluid {
+    width: 300px;
+    padding: 0 15px;
+  }
+
+  .row {
+    margin-left: 0;
+  }
+}
+

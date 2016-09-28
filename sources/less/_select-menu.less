@@ -1,0 +1,48 @@
+/*==================  Select Menu  ======================*/
+@select-width-767: 420px;
+@select-width-479: 270px;
+@select-height: 30px;
+@select-font: 400 15px @default-font;
+
+.select-menu {
+  position: relative;
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: @select-width-767;
+  border: 1px solid #8e8e8e;
+  @select-clr: #585858;
+  background: #fff url('../images/select.png') no-repeat right center;
+
+  overflow: hidden;
+
+  .select {
+    width: @select-width-767 + 20;
+    height: @select-height;
+    color: @select-clr;
+    background-color: transparent;
+    font: @select-font;
+    line-height: @select-height;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    -webkit-appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  @media (max-width: 479px) {
+    width: @select-width-479;
+
+    .select {
+      width: @select-width-479 + 20;
+    }
+  }
+}

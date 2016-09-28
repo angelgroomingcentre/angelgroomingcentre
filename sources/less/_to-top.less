@@ -1,0 +1,33 @@
+/*==================     ToTop     ======================*/
+.toTop {
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  line-height: 34px;
+  border-radius: 50%;
+  color: #fff;
+  background: url(../images/totop.png) no-repeat;
+
+  position: fixed;
+  right: 66px;
+  bottom: 180px;
+
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  z-index: 20;
+
+
+  &:hover {
+    border: 1px solid #69daf6;
+    background: url(../images/totop.png) no-repeat;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .toTop {
+    display: none !important;
+  }
+}
+

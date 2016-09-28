@@ -1,0 +1,183 @@
+/*========================   Menu   ==========================*/
+
+//--------------------------------------------------------------
+//                       Menu Styles
+//--------------------------------------------------------------
+.sf-menu {
+  .clearfix;
+  display: inline-block;
+  padding: 29px 280px;
+  padding-top: 28px;
+  text-align: center;
+  > li {
+    position: relative;
+    float: left;
+
+    & + li {
+      margin-left: 41px;
+    }
+  }
+
+  a {
+    display: block;
+  }
+
+  @media only screen and (max-width: 1199px) {
+    padding: 29px 150px;
+  }
+  @media only screen and (max-width: 979px) {
+    padding: 29px 50px;
+  }
+}
+
+//--------------------------------------------------------------
+//                     Menu item styles
+//--------------------------------------------------------------
+.sf-menu {
+  > li {
+    position: relative;
+
+    &:after{
+      position: absolute;
+      content: url(..//images/header-menu-icon.png);
+      top: 50%;
+      left: 100%;
+      margin-left:13px;
+      margin-top: -2px;
+      line-height: 11px;
+    }
+    > a {
+      color: #FFF;
+      font-size: 18px;
+      line-height: 22px;
+      position: relative;
+      background: #2e2e2e;
+    }
+
+    &.sfHover > a, > a:hover {
+      color: #ffbf43;
+      background: #2e2e2e;
+    }
+
+    &.active > a {
+      color: @secondary;
+      background: #2e2e2e;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                   Sub menu lvl1 styles
+//--------------------------------------------------------------
+.sf-menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 90px;
+  margin-top: 29px;
+  margin-left: -10px;
+  padding: 18px 0;
+  padding-bottom: 5px;
+  background: #40c6ed;
+  z-index: 2;
+  .box-sizing(border-box);
+
+
+  &:before{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    color: #40c6ed;
+    margin-left: -4px;
+    margin-top: -11px;
+    content: @fa-caret-up;
+    font: 400 16px/16px @fa;
+  }  
+}
+
+//--------------------------------------------------------------
+//                 Sub menu lvl1 item styles
+//--------------------------------------------------------------
+.sf-menu ul {
+  > li {
+    position: relative;  
+    > a {
+      font-size: 13px;
+      line-height: 16px;
+      color: #FFF;
+      margin: 9px 16px;
+      padding-bottom: 9px;
+      min-width: 58px;
+      border-bottom: 1px dotted #fff;
+    }
+
+    &.sfHover > a, > a:hover {
+      color: #aafffe;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                   Sub menu lvl2 styles
+//--------------------------------------------------------------
+.sf-menu ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -18px;
+  margin-left: 0;
+  width: auto;
+  padding: 16px 0;
+  padding-bottom: 5px;
+  background: #fff;
+  z-index: 4;
+}
+
+//--------------------------------------------------------------
+//                 Sub menu lvl2 item styles
+//--------------------------------------------------------------
+.sf-menu ul ul {
+  > li {
+    > a {
+      text-align: left;
+      font-size: 13px;
+      line-height: 16px;
+      margin: 9px 16px;
+      margin-left: 18px;
+      padding-bottom: 9px;
+      width: 58px;
+      color: #5c5c5c;
+      border-bottom: 1px dotted #cdcdcd;
+    }
+
+    &.sfHover > a, > a:hover {
+      color: #c1c1c1;
+    }
+  }
+}
+
+//--------------------------------------------------------------
+//                      sf-with-ul styles
+//--------------------------------------------------------------
+.sf-menu > li > .sf-with-ul {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    margin-top: 3px;
+    margin-left: -5px;
+    content: @fa-caret-down;
+    font: 400 12px/12px @fa;
+  }
+}
+
+//--------------------------------------------------------------
+//                        Responsive
+//--------------------------------------------------------------
+@media (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+}

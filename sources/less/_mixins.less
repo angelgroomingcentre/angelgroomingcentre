@@ -1,0 +1,131 @@
+//==========================================================
+//                        MIXINS
+//==========================================================
+
+// Note: Some of described mixins in this file requires the ie conditional comments
+//
+// For IE < 9
+// <!--[if lt IE 9]>
+//    <html class='lt-ie9'>
+// <![endif]-->
+//
+
+
+// Opacity
+.opacity(@opacity) {
+  opacity: @opacity;
+
+  // IE8 filter
+  .lt-ie9 & {
+    @opacity-ie: (@opacity * 100);
+    filter: ~"alpha(opacity=@{opacity-ie})";
+  }
+}
+
+// Background-rgba
+.background(@rgba) {
+  background: @rgba;
+
+  .lt-ie9 & {
+    background: none;
+    -ms-filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d')", argb(@rgba), argb(@rgba)));
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d')", argb(@rgba), argb(@rgba)));
+    zoom: 1;
+  }
+}
+
+
+// Transition
+.transition(@transition) {
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  -webkit-transition: @transition;
+  transition: @transition;
+}
+
+// Transition Delay
+.transition-delay(@delay) {
+  -moz-transition-delay: @delay;
+  -o-transition-delay: @delay;
+  -webkit-transition-delay: @delay;
+  transition-delay: @delay;
+}
+
+// Transform Origin
+.transform-origin(@transform-origin) {
+  -moz-transform-origin: @transform-origin;
+  -ms-transform-origin: @transform-origin;
+  -o-transform-origin: @transform-origin;
+  -webkit-transform-origin: @transform-origin;
+  transform-origin: @transform-origin;
+}
+
+// Transform
+.transform(@transform) {
+  -moz-transform: @transform;
+  -ms-transform: @transform;
+  -o-transform: @transform;
+  -webkit-transform: @transform;
+  transform: @transform;
+}
+
+// Box Sizing
+.box-sizing(@box-sizing) {
+  -moz-box-sizing: @box-sizing;
+  -webkit-box-sizing: @box-sizing;
+  box-sizing: @box-sizing;
+}
+
+// Clearfix
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+// Variables
+@fa: 'FontAwesome';
+
+// FA Icons
+// Angle
+@fa-angle-left: '\f104';
+@fa-angle-right: '\f105';
+@fa-angle-down: '\f107';
+@fa-angle-up: '\f106';
+
+// Arrow Circle
+@fa-arrow-circle-down: '\f0ab';
+@fa-arrow-circle-top: '\f0aa';
+@fa-arrow-circle-left: '\f0a8';
+@fa-arrow-circle-right: '\f0a9';
+
+// Caret
+@fa-caret-down: '\f0d7';
+@fa-caret-right: '\f0da';
+@fa-caret-left: '\f0d9';
+@fa-caret-up: '\f0d8';
+
+// Chevron
+@fa-chevron-left: '\f053';
+@fa-chevron-right: '\f054';
+@fa-chevron-up: '\f077';
+@fa-chevron-down: '\f078';
+
+// Other
+@fa-search: '\f002';
+@fa-close: '\f00d';
+@fa-expand: '\f065';
+@fa-play-circle: '\f144';
+@fa-play-circle-o: '\f01d';
+@fa-play: '\f04b';
+@fa-youtube-play: '\f16a';
+@fa-link: '\f0c1';
+@fa-envelope: '\f0e0'; 
+@fa-mobile: '\f10b'; 
+@fa-map-marker: '\f041';
