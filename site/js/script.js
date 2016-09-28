@@ -144,7 +144,7 @@ $(document).ready(function () {
 (function ($) {
     var o = document.getElementById("google-map");
     if (o) {
-        include('//maps.google.com/maps/api/js?sensor=false');
+        include('//maps.google.com/maps/api/js?key=AIzaSyBvUFZzY9wr6Xca1O61Bn-PuiZM1oWPzU4&sensor=false');
         include('js/jquery.rd-google-map.js');
 
         $(document).ready(function () {
