@@ -178,7 +178,7 @@ hr + .row {
 }
 @media only screen and (max-width: 1199px) {
   .sf-menu {
-    padding: 29px 150px;
+    padding: 29px 50px;
   }
 }
 @media only screen and (max-width: 979px) {
