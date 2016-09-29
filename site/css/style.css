@@ -154,7 +154,7 @@ hr + .row {
 /*========================   Menu   ==========================*/
 .sf-menu {
   display: inline-block;
-  padding: 29px 280px;
+  padding: 29px 80px;
   padding-top: 28px;
   text-align: center;
 }
