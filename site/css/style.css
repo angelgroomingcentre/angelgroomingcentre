@@ -27,7 +27,7 @@ h1 {
   font-size: 60px;
   line-height: 72px;
   letter-spacing: 3px;
-  color: #40c6ed;
+  color: #14b4b5;
 }
 h2 {
   font-size: 48px;
@@ -223,7 +223,7 @@ hr + .row {
   margin-left: -10px;
   padding: 18px 0;
   padding-bottom: 5px;
-  background: #40c6ed;
+  background: #14b4b5;
   z-index: 2;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -233,7 +233,7 @@ hr + .row {
   position: absolute;
   left: 50%;
   top: 0%;
-  color: #40c6ed;
+  color: #14b4b5;
   margin-left: -4px;
   margin-top: -11px;
   content: '\f0d8';
@@ -558,7 +558,7 @@ hr + .row {
   margin-top: -27px;
 }
 .brand_name a:hover {
-  color: #40c6ed;
+  color: #14b4b5;
 }
 .brand_name span {
   color: #242424;
@@ -1592,7 +1592,7 @@ hr + .row {
   font-weight: 700;
 }
 .footer .footer-brand > span {
-  color: #40c6ed;
+  color: #14b4b5;
 }
 .footer hr {
   margin: 0;
