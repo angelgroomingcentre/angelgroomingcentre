@@ -361,12 +361,12 @@ hr + .row {
   margin-left: 15px;
 }
 .isStuck .brand_name a:before {
-  content: url(../images/brand-icon.png);
+/*  content: url(../images/brand-icon.png);
   position: absolute;
   top: 0;
   left: 0;
   margin-left: -8px;
-  margin-top: -20px;
+  margin-top: -20px;*/
 }
 .isStuck .brand_name span {
   color: #fff;
