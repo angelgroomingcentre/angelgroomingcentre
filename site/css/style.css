@@ -195,8 +195,8 @@ hr + .row {
   top: 50%;
   left: 100%;
   margin-left: 13px;
-  margin-top: -2px;
-  line-height: 11px;
+  margin-top: -4px;
+  line-height: 14px;
 }
 .sf-menu > li > a {
   color: #FFF;
@@ -361,12 +361,12 @@ hr + .row {
   margin-left: 15px;
 }
 .isStuck .brand_name a:before {
-/*  content: url(../images/brand-icon.png);
+  content: url(../images/brand-icon.png);
   position: absolute;
   top: 0;
   left: 0;
   margin-left: -8px;
-  margin-top: -20px;*/
+  margin-top: -20px;
 }
 .isStuck .brand_name span {
   color: #fff;
@@ -550,12 +550,12 @@ hr + .row {
   position: relative;
 }
 .brand_name a:before {
-/*  content: url(../images/brand-icon-header.png);
+  content: url(../images/brand-icon-header.png);
   position: absolute;
   top: 0;
   left: 0;
   margin-left: -8px;
-  margin-top: -27px;*/
+  margin-top: -27px;
 }
 .brand_name a:hover {
   color: #40c6ed;
