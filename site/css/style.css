@@ -557,7 +557,7 @@ hr + .row {
 }
 .brand_name:before {
   content: url(../images/brand-icon-header.png);
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
 }
