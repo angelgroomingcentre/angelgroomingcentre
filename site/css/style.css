@@ -553,6 +553,7 @@ hr + .row {
 
 .entry-header {
   border-bottom: 3px solid #e7decf;
+  margin-bottom: 30px;
 }
 
 .brand_name {
