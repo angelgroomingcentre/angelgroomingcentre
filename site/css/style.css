@@ -555,6 +555,8 @@ hr + .row {
 }
 .brand_name a {
   position: relative;
+  display: inline-block;
+  width: 100%;
 }
 .brand_name a:before {
   content: url(../images/brand-icon-header.png);
@@ -570,7 +572,7 @@ hr + .row {
   display: block;
   position: absolute;
   top: 50%;
-  right: -30%;
+  left: 48%;
   color: #242424;
   font-size: 25px;
 }
@@ -578,6 +580,10 @@ hr + .row {
   .brand_name {
     font-size: 45px;
     line-height: 57px;
+  }
+
+  .brand_name span {
+    font-size: 15px;
   }
 }
 .brand_slogan {
