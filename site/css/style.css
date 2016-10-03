@@ -570,7 +570,7 @@ hr + .row {
   display: block;
   position: absolute;
   top: 50%;
-  right: -50%;
+  right: -30%;
   color: #242424;
   font-size: 25px;
 }
