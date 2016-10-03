@@ -550,6 +550,7 @@ hr + .row {
   box-sizing: border-box;
 }
 .brand_name {
+  padding-top: 30px;
   overflow: none;
 }
 .brand_name a {
