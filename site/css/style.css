@@ -1,7 +1,13 @@
 @import "animate.css";
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-@import url(//fonts.googleapis.com/css?family=Fontdiner+Swanky);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+
+@font-face { 
+  font-family: Zapfino; 
+  src: url(..//font/Zapfino.ttf);
+}
+
+
 /*========================================================
                       Main Styles
 =========================================================*/
@@ -23,7 +29,7 @@ h6 {
   font-family: 'Open Sans', sans-serif;
 }
 h1 {
-  font-family: 'Fontdiner Swanky', cursive;
+  font-family: Zapfino, cursive;
   font-size: 60px;
   line-height: 72px;
   letter-spacing: 3px;
