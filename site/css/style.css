@@ -555,8 +555,11 @@ hr + .row {
 .brand_name a {
   position: relative;
 }
-.brand_name {
-  background: url(../images/brand-icon-header.png) fixed no-repeat bottom left;
+.brand_name:before {
+  content: url(../images/brand-icon-header.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .brand_name a:hover {
   color: #14b4b5;
