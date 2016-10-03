@@ -569,6 +569,7 @@ hr + .row {
 .brand_name span {
   display: block;
   position: absolute;
+  top: -50%;
   right: -50%;
   color: #242424;
   font-size: 25px;
