@@ -361,6 +361,7 @@ hr + .row {
   text-align: left !important;
 }
 .isStuck .brand_name {
+  padding: 0;
   font-size: 30px;
   line-height: 42px;
   margin-top: -15px;
