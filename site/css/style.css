@@ -550,6 +550,11 @@ hr + .row {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.entry-header {
+  border: 34px solid #e7decf;
+}
+
 .brand_name {
   padding-top: 30px;
   overflow: none;
