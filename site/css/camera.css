@@ -2,14 +2,14 @@
                         Camera
 =========================================================*/
 .camera_container {
-  background: #e8fcfc;
-  border-bottom: 242px solid #e8fcfc;
+  background: #eef6f7;
+  border-bottom: 242px solid #eef6f7;
   position: relative;
   padding-bottom: 40.2%;
 }
 @media only screen and (max-width: 479px) {
   .camera_container {
-    border-bottom: 336px solid #e8fcfc;
+    border-bottom: 336px solid #eef6f7;
   }
 }
 @media (max-width: 746.26865672px) {
