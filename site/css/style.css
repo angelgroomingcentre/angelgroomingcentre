@@ -413,7 +413,7 @@ hr + .row {
   z-index: 20;
 }
 .toTop:hover {
-  border: 1px solid #69daf6;
+  border: 1px solid #a3f5f5;
   background: url(../images/totop.png) no-repeat;
 }
 @media only screen and (max-width: 1399px) {
@@ -753,7 +753,7 @@ hr + .row {
   transition: 0.3s;
   font-family: "FontAwesome";
   font-size: 6px;
-  background: none repeat scroll 0% 0% #69DAF6;
+  background: none repeat scroll 0% 0% #a3f5f5;
   border-radius: 50%;
   color: #FFF;
   position: absolute;
