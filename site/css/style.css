@@ -662,7 +662,7 @@ hr + .row {
 }
 /*==================  Backgrounds  ======================*/
 .bg01 {
-  background: #19e6e6;
+  background: #14b8b8;
 }
 .cnt-bg01 {
   background: #f25056;
@@ -674,7 +674,7 @@ hr + .row {
   background: #3abe86;
 }
 .cnt-bg04 {
-  background: #19e6e6;
+  background: #14b8b8;
 }
 .cnt-bg05 {
   background: #fcfcfc !important;
@@ -792,7 +792,7 @@ hr + .row {
   display: inline-block;
 }
 .soc-list li:hover a {
-  color: #19e6e6 !important;
+  color: #14b8b8 !important;
 }
 @media only screen and (max-width: 767px) {
   .soc-list {
@@ -803,7 +803,7 @@ hr + .row {
 }
 /*==================      Box      ======================*/
 .welcome {
-  border-top: 7px solid #19e6e6;
+  border-top: 7px solid #14b8b8;
   position: relative;
   display: block;
   padding-bottom: 50px;
@@ -897,7 +897,7 @@ hr + .row {
   height: 0;
   border-style: solid;
   border-width: 9px 9px 0 9px;
-  border-color: #19e6e6 transparent transparent transparent;
+  border-color: #14b8b8 transparent transparent transparent;
 }
 .box {
   margin: 0;
@@ -979,7 +979,7 @@ hr + .row {
   text-align: left;
 }
 .box-01_cnt h4 a {
-  color: #19e6e6;
+  color: #14b8b8;
 }
 .box-01_cnt h4 a:hover {
   color: #ffbf43;
@@ -1274,7 +1274,7 @@ hr + .row {
   overflow: hidden;
 }
 .box-05_cnt h6 {
-  color: #19e6e6;
+  color: #14b8b8;
   line-height: 22px;
 }
 .box-05_cnt p {
@@ -1415,7 +1415,7 @@ hr + .row {
   color: #ffbf43;
 }
 .box-06_cnt-2 a:hover {
-  color: #19e6e6;
+  color: #14b8b8;
 }
 .box-06_cnt-2 h2 + p {
   margin-top: 16px;
@@ -1471,7 +1471,7 @@ hr + .row {
   margin-top: 20px;
 }
 .box-07_cnt a {
-  color: #19e6e6;
+  color: #14b8b8;
 }
 .box-07_cnt a:hover {
   color: #ffbf43;
@@ -1490,7 +1490,7 @@ hr + .row {
   color: #ffb254;
 }
 .box-07_cnt .soc-list li a:hover {
-  color: #19e6e6;
+  color: #14b8b8;
 }
 @media only screen and (max-width: 1199px) {
   .box-07_cnt {
@@ -1529,7 +1529,7 @@ hr + .row {
 }
 .box-08 h4,
 .box-08 a {
-  color: #19e6e6;
+  color: #14b8b8;
 }
 .box-08 h4 + table {
   margin-top: 5px;
@@ -1549,7 +1549,7 @@ hr + .row {
 }
 .box-09 h4 {
   text-align: left;
-  color: #19e6e6;
+  color: #14b8b8;
 }
 .box-09 p {
   color: #c6c6c6;
@@ -1590,7 +1590,7 @@ hr + .row {
   display: inline-block;
   font-size: 15px;
   line-height: 22px;
-  color: #19e6e6;
+  color: #14b8b8;
   margin-left: 0;
 }
 .box-10 .mail-link:hover {
