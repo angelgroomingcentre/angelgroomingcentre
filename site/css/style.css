@@ -851,8 +851,11 @@ hr + .row {
   margin: 43px;
   margin-bottom: 38px;
 }
-.welcome_cnt a {
+.welcome_cnt {
   text-align: center;
+}
+.welcome_cnt a {
+  display: inline-block;
 }
 @media only screen and (max-width: 979px) {
   .welcome_cnt h3 {
