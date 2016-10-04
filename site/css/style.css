@@ -848,8 +848,8 @@ hr + .row {
 }
 .welcome_cnt h3 {
   text-align: center;
-  margin: 22px;
-  margin-bottom: 12px;
+  margin: 43px;
+  margin-bottom: 38px;
 }
 @media only screen and (max-width: 979px) {
   .welcome_cnt h3 {
