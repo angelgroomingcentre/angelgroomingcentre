@@ -692,7 +692,7 @@ hr + .row {
   position: absolute;
   top: 0;
   left: 0;
-  color: #58cdea;
+  color: #17cfcf;
 }
 /*==================    Buttons    ======================*/
 .btn {
@@ -1185,7 +1185,7 @@ hr + .row {
 .box-03 .mail-link {
   font-size: 18px;
   line-height: 10px;
-  color: #58cdea;
+  color: #17cfcf;
   margin-left: 34px;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
