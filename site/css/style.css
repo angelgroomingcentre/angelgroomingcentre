@@ -361,20 +361,23 @@ hr + .row {
 }
 .isStuck .brand_name {
   padding: 0;
-  font-size: 30px;
-  line-height: 42px;
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 22px;
   margin-top: -15px;
   margin-left: 15px;
 }
 .isStuck .brand_name a:before {
-  content: url(../images/brand-icon.png);
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: -8px;
-  margin-top: -20px;
+  margin: 0;
 }
 .isStuck .brand_name span {
+  width: 180px;
+  font-size: 12px;
+  left: 10%;
   color: #fff;
 }
 .isStuck .brand_slogan {
