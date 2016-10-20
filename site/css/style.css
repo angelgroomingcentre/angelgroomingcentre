@@ -1148,9 +1148,10 @@ hr + .row {
   font-size: 39px;
 }
 .box-03 .brand_name a:before {
-  margin-top: -31px;
+/*  margin-top: -31px;
   margin-left: -5px;
-  content: url(../images/brand-icon.png);
+  content: url(../images/brand-icon.png);*/
+  content: "";
 }
 @media only screen and (max-width: 979px) {
   .box-03 .brand_name a {
