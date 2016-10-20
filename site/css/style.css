@@ -1142,7 +1142,8 @@ hr + .row {
   }
 }
 .box-03 .brand {
-  margin-top: 22px;
+  margin-top: 0;
+  padding-bottom: 30px;
 }
 .box-03 .brand_name span {
   top: 35px;
