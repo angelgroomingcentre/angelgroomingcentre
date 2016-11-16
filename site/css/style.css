@@ -304,6 +304,10 @@ hr + .row {
     display: none;
   }
 }
+
+.text-left {
+  text-align: left;
+}
 /*==================  Select Menu  ======================*/
 .select-menu {
   position: relative;
