@@ -324,7 +324,7 @@ hr + .row {
 }
 
 .pricelist-margin {
-  margin: 5px; !important;
+  margin-top: 5px; !important;
 }
 
 .box-02_cnt .text-left {
