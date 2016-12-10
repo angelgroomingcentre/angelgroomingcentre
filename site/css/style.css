@@ -7,6 +7,11 @@
   src: url(..//font/Zapfino.ttf);
 }
 
+.pricelist-outerbox {
+  background-color: #fff;
+  border: 2px solid #ffbf43;
+}
+
 .brand_color {
   color: #14b8b8
 }
