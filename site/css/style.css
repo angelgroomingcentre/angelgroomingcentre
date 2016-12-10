@@ -323,7 +323,7 @@ hr + .row {
   font-size: 13px;
 }
 
-.pricelist-margin {
+.row + .row.pricelist-margin {
   margin-top: 5px; !important;
 }
 
