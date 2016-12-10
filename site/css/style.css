@@ -318,6 +318,15 @@ hr + .row {
   }
 }
 
+.pricelist-text {
+  text-align: center;
+  font-size: 13px;
+}
+
+.pricelist-margin {
+  margin: 5px;
+}
+
 .box-02_cnt .text-left {
   text-align: left;
 }
