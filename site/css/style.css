@@ -12,6 +12,11 @@
   background-color: #fff;
 }
 
+.pricelist-innerbox {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #edf4f7;
+}
+
 .brand_color {
   color: #14b8b8
 }
