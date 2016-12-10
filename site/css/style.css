@@ -323,8 +323,8 @@ hr + .row {
   font-size: 13px;
 }
 
-.row + .row.pricelist-margin {
-  margin-top: 5px; !important;
+.pricelist-margin {
+  margin-top: 5px;
 }
 
 .box-02_cnt .text-left {
