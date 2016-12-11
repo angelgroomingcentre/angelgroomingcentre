@@ -230,6 +230,12 @@ hr + .row {
   }
 }
 
+@media only screen and (max-width: 979px) {
+  .sf-menu > li:nth-child(4)
+    display: none;
+  }
+}
+
 .sf-menu > li.sfHover > a,
 .sf-menu > li > a:hover {
   color: #ffbf43;
