@@ -398,7 +398,7 @@ hr + .row {
 .isStuck .brand {
   background: #2e2e2e !important;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 40px !important;
   margin-bottom: 25px;
   float: left !important;
   text-align: left !important;
