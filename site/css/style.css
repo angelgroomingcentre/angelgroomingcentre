@@ -856,7 +856,7 @@ hr + .row {
     position: relative;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .soc-list {
     margin-top: -100px;
   }
