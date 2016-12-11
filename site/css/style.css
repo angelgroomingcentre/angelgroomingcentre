@@ -647,6 +647,12 @@ hr + .row {
     left: 10%;
   }
 }
+@media only screen and (max-width: 479px) {
+  .brand_name span {
+    left: 20%;
+  }
+}
+
 .brand_slogan {
   font-family: 'Georgia', serif;
   font-weight: 400;
@@ -1209,6 +1215,11 @@ hr + .row {
   left: 80px;
 }
 @media only screen and (max-width: 667px) {
+  .box-03 .brand_name span {
+    left: 70px;
+  }
+}
+@media only screen and (max-width: 479px) {
   .box-03 .brand_name span {
     left: 40px;
   }
