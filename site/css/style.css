@@ -205,6 +205,8 @@ hr + .row {
     padding: 29px 50px;
   }
 }
+
+
 .sf-menu > li {
   position: relative;
 }
@@ -217,6 +219,12 @@ hr + .row {
   margin-top: -4px;
   line-height: 14px;
 }
+@media only screen and (max-width: 479px) {
+  .sf-menu > li:after {
+    content: "";
+  }
+}
+
 .sf-menu > li > a {
   color: #FFF;
   font-size: 18px;
