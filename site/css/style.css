@@ -380,7 +380,7 @@ hr + .row {
     display: block;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 667px) {
   .select-menu {
     width: 270px;
   }
@@ -636,7 +636,7 @@ hr + .row {
   color: #242424;
   font-size: 25px;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .brand_name {
     font-size: 45px;
     line-height: 57px;
@@ -873,7 +873,7 @@ hr + .row {
   margin-top: -278px;
   margin-bottom: 30px;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .welcome {
     height: 240px;
     margin-top: -372px;
@@ -943,7 +943,7 @@ hr + .row {
     line-height: 18px;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .welcome_cnt p {
     padding: 0 10px;
   }
@@ -1133,7 +1133,7 @@ hr + .row {
     line-height: 34px;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .box-02_cnt {
     width: 250px;
     padding: 11px 15px 10px 15px;
@@ -1169,7 +1169,7 @@ hr + .row {
     line-height: 34px;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .box-02-p2 .box-02_cnt {
     width: 250px;
     padding: 11px 15px 10px 15px;
@@ -1440,7 +1440,7 @@ hr + .row {
     padding: 23px 45px;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .box-06_cnt p {
     padding: 13px 15px;
     font-size: 20px;
@@ -1507,7 +1507,7 @@ hr + .row {
     text-align: center;
   }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .box-06_cnt-2 {
     padding-right: 40px;
     padding: 20px 10px;
