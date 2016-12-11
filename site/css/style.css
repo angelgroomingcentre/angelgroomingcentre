@@ -219,11 +219,6 @@ hr + .row {
   margin-top: -4px;
   line-height: 14px;
 }
-@media only screen and (max-width: 479px) {
-  .sf-menu > li:after {
-    content: "";
-  }
-}
 
 .sf-menu > li > a {
   color: #FFF;
@@ -618,6 +613,11 @@ hr + .row {
   position: absolute;
   bottom: -100%;
   left: 10%;
+}
+@media only screen and (max-width: 479px) {
+  .brand_name a:before {
+    content: "";
+  }
 }
 .brand_name a:hover {
   color: #14b4b5;
