@@ -603,6 +603,7 @@ hr + .row {
 }
 
 .brand_name {
+  padding-top: 30px;
   overflow: none;
 }
 .brand_name a {
@@ -617,6 +618,9 @@ hr + .row {
   left: 10%;
 }
 @media only screen and (max-width: 479px) {
+  .header .brand {
+    margin-top: 30px;
+  }
   .brand_name a:before {
     content: "";
   }
