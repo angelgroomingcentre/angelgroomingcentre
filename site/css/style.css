@@ -644,12 +644,12 @@ hr + .row {
 
   .brand_name span {
     font-size: 15px;
-    left: 10%;
+    left: 40%;
   }
 }
 @media only screen and (max-width: 479px) {
   .brand_name span {
-    left: 40%;
+    left: 10%;
   }
 }
 
