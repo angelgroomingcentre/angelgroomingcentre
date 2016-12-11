@@ -224,7 +224,7 @@ hr + .row {
   position: relative;
   background: #2e2e2e;
 }
-@media only screen and (max-width: 979px) {
+@media only screen and (max-width: 1199px) {
   .sf-menu > li > a {
     font-size: 16px;
   }
