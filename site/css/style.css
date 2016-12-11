@@ -617,7 +617,7 @@ hr + .row {
   bottom: -100%;
   left: 10%;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .header .brand {
     margin-top: 30px;
   }
@@ -1208,7 +1208,7 @@ hr + .row {
   top: 35px;
   left: 80px;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 667px) {
   .box-03 .brand_name span {
     left: 40px;
   }
