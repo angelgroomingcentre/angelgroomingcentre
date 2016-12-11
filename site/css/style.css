@@ -649,7 +649,7 @@ hr + .row {
 }
 @media only screen and (max-width: 479px) {
   .brand_name span {
-    left: 20%;
+    left: 40%;
   }
 }
 
@@ -1216,7 +1216,7 @@ hr + .row {
 }
 @media only screen and (max-width: 667px) {
   .box-03 .brand_name span {
-    left: 70px;
+    left: 100px;
   }
 }
 @media only screen and (max-width: 479px) {
