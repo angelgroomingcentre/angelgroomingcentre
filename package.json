@@ -1,0 +1,22 @@
+{
+  "name": "angels-grooming-centre",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malliapi/angels-grooming-centre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malliapi/angels-grooming-centre/issues"
+  },
+  "homepage": "https://github.com/malliapi/angels-grooming-centre#readme",
+  "dependencies": {
+    "serve-handler": "^6.1.3"
+  }
+}
