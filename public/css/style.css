@@ -1196,10 +1196,16 @@ hr + .row {
 .box-02-p2 .list li a {
   color: #fff;
 }
-.box-03 h4 {
-  font-size: 26px;
-  line-height: 48px;
-  color: #4b4b4b;
+.box-03 {
+  a {
+    color: #14b8b8;
+  }
+
+  h4 {
+    font-size: 26px;
+    line-height: 48px;
+    color: #4b4b4b;
+  }
 }
 @media only screen and (max-width: 767px) {
   .box-03 h4 {
@@ -1606,6 +1612,7 @@ hr + .row {
     width: 100%;
   }
 }
+
 .box-08 {
   background: #fff;
   padding: 27px 32px;
