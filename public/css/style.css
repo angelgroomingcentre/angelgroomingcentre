@@ -128,7 +128,7 @@ a:hover {
   color: #ffbf43;
 }
 a[href^="tel:"] {
-  color: inherit;
+  color: #14b8b8;
   text-decoration: none;
 }
 strong {
@@ -1196,16 +1196,10 @@ hr + .row {
 .box-02-p2 .list li a {
   color: #fff;
 }
-.box-03 {
-  a {
-    color: #14b8b8;
-  }
-
-  h4 {
+.box-03 h4 {
     font-size: 26px;
     line-height: 48px;
     color: #4b4b4b;
-  }
 }
 @media only screen and (max-width: 767px) {
   .box-03 h4 {
