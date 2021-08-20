@@ -1,24 +1,30 @@
-import handler from "serve-handler";
-import http from "http";
+import serve from "koa-static";
+import Koa from "koa";
+import sslify from "koa-sslify";
 import path from "path";
 import logger from "../utils/logger.mjs";
 
 const staticSiteDirectory = path.join(process.cwd(), 'public');
+const app = new Koa();
 
 const serverOptions = {
   public: staticSiteDirectory,
   port: process.env.PORT || 3000,
-  cleanUrls: true,
-  directoryListing: false,
-  trailingSlash: false,
-  // renderSingle   If a directory only contains one file, render it
-  // symlinks   Resolve symlinks instead of rendering a 404 error
-  etag: true,
 };
 
-const server = http.createServer((request, response) => handler(request, response, serverOptions));
+const sslMiddleware = sslify.default;
+const sslMiddlewareResolver = sslify.xForwardedProtoResolver;
 
-server.listen(serverOptions.port, () => {
-  logger.success(`Running at http://localhost:${serverOptions.port}`);
-  logger.info(`Serving from directory ${staticSiteDirectory}`);
+app.use(sslMiddleware({ resolver: sslMiddlewareResolver }));
+app.use(serve(staticSiteDirectory));
+logger.info(`Serving from directory ${staticSiteDirectory}`);
+
+// error handler
+
+app.on('error', function(err) {
+  logger.error('sent error %s to the cloud', err.message);
+  logger.error(err);
 });
+
+app.listen(serverOptions.port);
+logger.success(`Running at http://localhost:${serverOptions.port}`);
